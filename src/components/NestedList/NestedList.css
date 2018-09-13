@@ -1,0 +1,15 @@
+/* -----------------------------------------
+  NestedList styles
+------------------------------------------ */
+
+.NestedList {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 0;
+}
+
+.NestedList__item {
+  display: block;
+  padding: 0.75rem 1.25rem;
+}
