@@ -23,6 +23,7 @@ const Button = (props) => {
 };
 
 Button.propTypes = {
+  children: PropTypes.node,
   block: PropTypes.bool,
   color: PropTypes.string,
   disabled: PropTypes.bool,
@@ -30,6 +31,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
+  children: null,
   block: false,
   color: 'primary',
   disabled: false,
