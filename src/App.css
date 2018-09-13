@@ -14,3 +14,11 @@
   background-color: #4775de;
   color: #fff;
 }
+
+.App__backdrop-close {
+  color: #c9c9c9;
+  font-size: 1.4rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
