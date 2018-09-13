@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.10",
+    "normalize.css": "^8.0.0",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
-    "react-scripts": "1.1.5"
+    "react-scripts": "1.1.5",
+    "react-transition-group": "^2.4.0"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
+    "src/**/*.{js,jsx,json}": [
       "prettier --single-quote --write",
       "git add"
     ]
@@ -18,7 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint:css": "stylelint \"src/**/*.css\"",
-    "prettier-watch": "onchange 'src/**/*.{js,jsx,json,css}' -- prettier --write {{changed}}",
+    "prettier-watch": "onchange 'src/**/*.{js,jsx,json}' -- prettier --write {{changed}}",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

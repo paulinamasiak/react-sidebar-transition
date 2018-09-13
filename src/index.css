@@ -1,5 +1,6 @@
+@import '../node_modules/normalize.css/normalize.css';
+
 body {
-  margin: 0;
-  padding: 0;
+  background-color: #f8f6f6;
   font-family: sans-serif;
 }
