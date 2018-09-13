@@ -1,0 +1,36 @@
+/* -----------------------------------------
+  Button styles
+------------------------------------------ */
+
+.Button {
+  border: 1px solid transparent;
+  border-radius: 10rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  outline: none;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  transition: all 0.15s ease-in-out;
+}
+
+.Button:active {
+  transform: scale(0.99);
+}
+
+.Button--primary {
+  border-color: #4686df;
+  color: #737373;
+}
+
+.Button--secondary {
+  border-color: #d8d8d8;
+  color: #a2a2a2;
+}
+
+.Button--block {
+  display: block;
+  width: 100%;
+}
