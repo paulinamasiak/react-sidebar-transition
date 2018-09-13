@@ -27,7 +27,7 @@ Drawer.propTypes = {
 Drawer.defaultProps = {
   children: null,
   show: false,
-  position: 'right',
+  position: 'left',
 };
 
 export default Drawer;
