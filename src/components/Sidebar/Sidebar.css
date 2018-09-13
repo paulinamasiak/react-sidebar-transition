@@ -25,7 +25,7 @@
 
 .Sidebar__link {
   align-items: center;
-  color: #c8c8ca;
+  color: #c9cacc;
   cursor: pointer;
   display: flex;
   text-transform: uppercase;
@@ -33,6 +33,13 @@
 
 .Sidebar__link--active {
   color: #4775de;
+  margin-bottom: 0.75rem;
+}
+
+.Sidebar__link--nested {
+  color: #a4abbd;
+  text-transform: capitalize;
+  margin-left: 1.125rem;
 }
 
 .Sidebar__link-icon {

@@ -4,21 +4,28 @@ import classNames from 'classnames';
 import Drawer from '../Drawer';
 import Button from '../Button';
 import Icon from '../Icon';
-import List from '../List';
+import NestedList from '../NestedList';
 import routes from '../../routes';
 
 import './Sidebar.css';
 
 const ACTIVE_ROUTE_ID = 1;
+const BASE_LEVEL = 0;
 
-const renderListItem = (route) => {
+const isActiveRoute = (route) => route.id === ACTIVE_ROUTE_ID;
+const isNestedRoute = (level) => level > BASE_LEVEL;
+
+const renderListItem = (route, level) => {
   const cssClasses = classNames('Sidebar__link', {
-    'Sidebar__link--active': route.id === ACTIVE_ROUTE_ID,
+    'Sidebar__link--active': isActiveRoute(route),
+    'Sidebar__link--nested': isNestedRoute(level),
   });
 
   return (
     <a className={cssClasses}>
-      <Icon className="Sidebar__link-icon" name={route.icon} size={20} />
+      {!isNestedRoute(level) && (
+        <Icon className="Sidebar__link-icon" name={route.icon} size={20} />
+      )}
       <span>{route.name}</span>
     </a>
   );
@@ -28,7 +35,7 @@ const Sidebar = (props) => (
   <Drawer show={props.show}>
     <div className="Sidebar">
       <nav className="Sidebar__body">
-        <List items={routes} itemRenderer={renderListItem} />
+        <NestedList items={routes} itemRenderer={renderListItem} />
       </nav>
       <div className="Sidebar__footer">
         <Button color="secondary" block>
