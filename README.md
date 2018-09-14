@@ -1,7 +1,6 @@
 # react-sidebar-transition
-Showcase of sidebar menu component - simple transition of opening and closing the sidebar menu
 
-# React Duotone
+Showcase of sidebar menu component - simple transition of opening and closing the sidebar menu
 
 ## Installation
 
