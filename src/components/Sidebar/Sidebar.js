@@ -41,16 +41,18 @@ const renderListItem = (route, level) => {
 };
 
 const Sidebar = (props) => (
-  <Drawer show={props.show}>
+  <Drawer show={props.show} position={props.position}>
     <div className="Sidebar">
       <nav className="Sidebar__body">
         <NestedList items={routes} itemRenderer={renderListItem} />
       </nav>
       <div className="Sidebar__footer">
-        <Button className="Sidebar__button" color="secondary" block>
-          Sign out
-        </Button>
-        <img className="Sidebar__logo" src={logo} />
+        <div className={`Sidebar_slide-container--${props.position}`}>
+          <Button className="Sidebar__button" color="secondary" block>
+            Sign out
+          </Button>
+          <img className="Sidebar__logo" src={logo} alt="Logo" />
+        </div>
       </div>
     </div>
   </Drawer>
@@ -58,10 +60,12 @@ const Sidebar = (props) => (
 
 Sidebar.propTypes = {
   show: PropTypes.bool,
+  position: PropTypes.oneOf(['left', 'right']),
 };
 
 Sidebar.defaultProps = {
   show: false,
+  position: 'left',
 };
 
 export default Sidebar;

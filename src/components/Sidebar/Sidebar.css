@@ -56,6 +56,20 @@
   color: #7c818f;
 }
 
+/* Sidebar slide container styles
+------------------------------------------ */
+
+.Sidebar_slide-container--left {
+  transform: translateX(-100%);
+  animation: slide-left 0.6s ease-out forwards;
+}
+
+.Sidebar_slide-container--right {
+  transform: translateX(100%);
+  animation: slide-right 0.6s ease-out forwards;
+}
+
+
 /* Other styles
 ------------------------------------------ */
 
@@ -72,4 +86,25 @@
   color: #4775de;
   display: block;
   height: 60px;
+  margin: 0 auto;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes  slide-right {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

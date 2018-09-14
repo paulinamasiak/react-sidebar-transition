@@ -9,7 +9,7 @@ const Drawer = (props) => (
     mountOnEnter
     unmountOnExit
     in={props.show}
-    timeout={600}
+    timeout={700}
     classNames={{
       enterActive: `Drawer--${props.position}-open`,
       exitActive: `Drawer--${props.position}-closed`,
