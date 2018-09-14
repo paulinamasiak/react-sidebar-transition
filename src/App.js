@@ -16,7 +16,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      isSidebarOpen: true,
+      isSidebarOpen: false,
       sidebarPosition: SIDEBAR_POSITIONS.LEFT,
     };
 
