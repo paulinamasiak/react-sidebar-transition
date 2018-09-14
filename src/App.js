@@ -73,7 +73,9 @@ class App extends Component {
           </Backdrop>
           <Sidebar show={isSidebarOpen} position={sidebarPosition} />
           <div className="App__buttons-container">
-            <Button onClick={this.toggleSidebarPosition}>Toggle sidebar</Button>
+            <Button onClick={this.toggleSidebarPosition}>
+              Toggle position
+            </Button>
           </div>
         </main>
       </div>
