@@ -62,12 +62,10 @@
 ------------------------------------------ */
 
 .Sidebar__slide-container--left {
-  transform: translateX(-100%);
   animation: slide-left 0.6s ease-out forwards;
 }
 
 .Sidebar__slide-container--right {
-  transform: translateX(100%);
   animation: slide-right 0.6s ease-out forwards;
 }
 
@@ -95,7 +93,7 @@
 
 @keyframes slide-left {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
   }
 
   100% {
@@ -105,7 +103,7 @@
 
 @keyframes slide-right {
   0% {
-    transform: translateX(100%);
+    transform: translateX(200%);
   }
 
   100% {
