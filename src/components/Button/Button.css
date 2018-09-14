@@ -3,21 +3,34 @@
 ------------------------------------------ */
 
 .Button {
+  background: transparent;
   border: 1px solid transparent;
   border-radius: 10rem;
-  cursor: pointer;
   display: inline-block;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.5;
-  outline: none;
   padding: 0.8rem 2rem;
   text-align: center;
   transition: all 0.15s ease-in-out;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.Button:not(:disabled) {
+  cursor: pointer;
+}
+
+.Button:disabled {
+  opacity: 0.7;
 }
 
 .Button:active {
   transform: scale(0.99);
+}
+
+.Button:focus {
+  outline: 0;
 }
 
 .Button--primary {

@@ -7,7 +7,7 @@ import './Button.css';
 // Simplified Button component
 
 const Button = (props) => {
-  const cssClasses = classNames('Button', {
+  const cssClasses = classNames('Button', props.className, {
     [`Button--${props.color}`]: props.color,
     'Button--block': props.block,
   });
@@ -23,6 +23,7 @@ const Button = (props) => {
 };
 
 Button.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node,
   block: PropTypes.bool,
   color: PropTypes.string,
@@ -31,6 +32,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
+  className: null,
   children: null,
   block: false,
   color: 'primary',
