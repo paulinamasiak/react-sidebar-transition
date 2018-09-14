@@ -6,6 +6,7 @@ import Button from '../Button';
 import Icon from '../Icon';
 import NestedList from '../NestedList';
 import routes from '../../routes';
+import logo from '../../logo.svg';
 
 import './Sidebar.css';
 
@@ -38,9 +39,10 @@ const Sidebar = (props) => (
         <NestedList items={routes} itemRenderer={renderListItem} />
       </nav>
       <div className="Sidebar__footer">
-        <Button color="secondary" block>
+        <Button className="Sidebar__button" color="secondary" block>
           Sign out
         </Button>
+        <img className="Sidebar__logo" src={logo} />
       </div>
     </div>
   </Drawer>
