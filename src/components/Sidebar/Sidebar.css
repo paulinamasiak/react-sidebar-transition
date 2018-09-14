@@ -69,7 +69,6 @@
   animation: slide-right 0.6s ease-out forwards;
 }
 
-
 /* Other styles
 ------------------------------------------ */
 
@@ -89,6 +88,9 @@
   margin: 0 auto;
 }
 
+/* Animations
+------------------------------------------ */
+
 @keyframes slide-left {
   0% {
     transform: translateX(-100%);
@@ -99,7 +101,7 @@
   }
 }
 
-@keyframes  slide-right {
+@keyframes slide-right {
   0% {
     transform: translateX(100%);
   }
