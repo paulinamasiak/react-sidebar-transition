@@ -6,13 +6,18 @@ import Button from './components/Button';
 
 import './App.css';
 
+const SIDEBAR_POSITIONS = {
+  LEFT: 'left',
+  RIGHT: 'right',
+};
+
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       isSidebarOpen: true,
-      sidebarPosition: 'left',
+      sidebarPosition: SIDEBAR_POSITIONS.LEFT,
     };
 
     this.toggleSidebarPosition = this.toggleSidebarPosition.bind(this);
@@ -21,9 +26,16 @@ class App extends Component {
   }
 
   toggleSidebarPosition() {
-    this.setState((prevState) => ({
-      sidebarPosition: prevState.sidebarPosition === 'left' ? 'right' : 'left',
-    }));
+    this.setState((prevState) => {
+      const nextPosition =
+        prevState.sidebarPosition === SIDEBAR_POSITIONS.LEFT
+          ? SIDEBAR_POSITIONS.RIGHT
+          : SIDEBAR_POSITIONS.LEFT;
+
+      return {
+        sidebarPosition: nextPosition,
+      };
+    });
   }
 
   openSidebar() {
