@@ -4,12 +4,14 @@ import CSSTransition from 'react-transition-group/CSSTransition';
 
 import './Backdrop.css';
 
+const TIMEOUT = 300;
+
 const Backdrop = (props) => (
   <CSSTransition
     mountOnEnter
     unmountOnExit
     in={props.show}
-    timeout={600}
+    timeout={TIMEOUT}
     classNames={{
       enterActive: 'Backdrop--open',
       exitActive: 'Backdrop--closed',

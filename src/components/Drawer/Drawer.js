@@ -4,12 +4,17 @@ import CSSTransition from 'react-transition-group/CSSTransition';
 
 import './Drawer.css';
 
+const TIMEOUT = {
+  enter: 600,
+  exit: 300,
+};
+
 const Drawer = (props) => (
   <CSSTransition
     mountOnEnter
     unmountOnExit
     in={props.show}
-    timeout={700}
+    timeout={TIMEOUT}
     classNames={{
       enterActive: `Drawer--${props.position}-open`,
       exitActive: `Drawer--${props.position}-closed`,
