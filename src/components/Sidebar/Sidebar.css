@@ -26,24 +26,37 @@
   padding: 3.5rem 1.125rem;
 }
 
+/* Sidebar link styles
+------------------------------------------ */
+
 .Sidebar__link {
   align-items: center;
   color: #c9cacc;
   cursor: pointer;
   display: flex;
   text-transform: uppercase;
+  margin-bottom: 0.75rem;
 }
 
 .Sidebar__link--active {
   color: #4775de;
-  margin-bottom: 0.75rem;
 }
 
-.Sidebar__link--nested {
+/* Sidebar nested link styles
+------------------------------------------ */
+
+.Sidebar__nested-link {
   color: #a4abbd;
-  text-transform: capitalize;
+  cursor: pointer;
   margin-left: 1.125rem;
 }
+
+.Sidebar__nested-link--acitive {
+  color: #7c818f;
+}
+
+/* Other styles
+------------------------------------------ */
 
 .Sidebar__link-icon {
   margin-right: 1.125rem;

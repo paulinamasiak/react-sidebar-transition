@@ -17,14 +17,24 @@ const isActiveRoute = (route) => route.id === ACTIVE_ROUTE_ID;
 const isNestedRoute = (level) => level > BASE_LEVEL;
 
 const renderListItem = (route, level) => {
-  const cssClasses = classNames('Sidebar__link', {
-    'Sidebar__link--active': isActiveRoute(route),
-    'Sidebar__link--nested': isNestedRoute(level),
-  });
+  const isActive = isActiveRoute(route);
+  const isNested = isNestedRoute(level);
+
+  let cssClasses;
+
+  if (isNested) {
+    cssClasses = classNames('Sidebar__nested-link', {
+      'Sidebar__nested-link--active': isActive,
+    });
+  } else {
+    cssClasses = classNames('Sidebar__link', {
+      'Sidebar__link--active': isActive,
+    });
+  }
 
   return (
     <a className={cssClasses}>
-      {!isNestedRoute(level) && (
+      {!isNested && (
         <Icon className="Sidebar__link-icon" name={route.icon} size={20} />
       )}
       <span>{route.name}</span>
