@@ -34,9 +34,7 @@ const renderListItem = (route, level) => {
 
   return (
     <a className={cssClasses}>
-      {!isNested && (
-        <Icon className="Sidebar__link-icon" name={route.icon} size={20} />
-      )}
+      {!isNested && <Icon className="Sidebar__link-icon" name={route.icon} />}
       <span>{route.name}</span>
     </a>
   );

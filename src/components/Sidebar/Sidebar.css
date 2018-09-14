@@ -34,8 +34,9 @@
   color: #c9cacc;
   cursor: pointer;
   display: flex;
-  text-transform: uppercase;
+  letter-spacing: 0.7px;
   margin-bottom: 0.75rem;
+  text-transform: uppercase;
 }
 
 .Sidebar__link--active {
@@ -46,9 +47,9 @@
 ------------------------------------------ */
 
 .Sidebar__nested-link {
-  color: #a4abbd;
+  color: #b8bfca;
   cursor: pointer;
-  margin-left: 1.125rem;
+  margin-left: 1.3rem;
 }
 
 .Sidebar__nested-link--acitive {
@@ -59,7 +60,8 @@
 ------------------------------------------ */
 
 .Sidebar__link-icon {
-  margin-right: 1.125rem;
+  font-size: 1.3rem;
+  margin-right: 1.3rem;
 }
 
 .Sidebar__button {
