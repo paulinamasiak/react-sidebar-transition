@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
-    "lodash": "^4.17.10",
     "normalize.css": "^8.0.0",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
