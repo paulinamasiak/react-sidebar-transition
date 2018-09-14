@@ -1,11 +1,18 @@
+.App {
+  text-align: center;
+}
+
+/* App header styles
+------------------------------------------ */
+
 .App__header {
+  display: flex;
   align-items: center;
+  justify-content: center;
   box-shadow:
     0 2px 4px rgba(0, 0, 0, 0.06),
     0 2px 24px 9px rgba(0, 0, 0, 0.04);
-  display: flex;
-  justify-content: flex-end;
-  min-height: 2rem;
+  min-height: 10rem;
   padding: 0.5rem 1rem;
   position: relative;
 }
@@ -15,10 +22,34 @@
   color: #fff;
 }
 
+.App__header-title {
+  font-weight: 400;
+}
+
+/* App button icons styles
+------------------------------------------ */
+
+.App__burger-menu,
 .App__backdrop-close {
-  color: #c9c9c9;
-  font-size: 1.4rem;
   position: absolute;
   right: 1rem;
   top: 1rem;
+}
+
+.App__backdrop-close {
+  color: #c9c9c9;
+  font-size: 1.4rem;
+}
+
+.App__backdrop-close--right,
+.App__burger-menu--right {
+  left: 1rem;
+  right: auto;
+}
+
+/* App main container styles
+------------------------------------------ */
+
+.App__main {
+  padding: 3rem 1rem;
 }
