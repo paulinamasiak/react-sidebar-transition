@@ -61,12 +61,12 @@
 /* Sidebar slide container styles
 ------------------------------------------ */
 
-.Sidebar_slide-container--left {
+.Sidebar__slide-container--left {
   transform: translateX(-100%);
   animation: slide-left 0.6s ease-out forwards;
 }
 
-.Sidebar_slide-container--right {
+.Sidebar__slide-container--right {
   transform: translateX(100%);
   animation: slide-right 0.6s ease-out forwards;
 }

@@ -55,28 +55,32 @@
 
 @keyframes open-left-drawer {
   0% {
+    opacity: 0;
     transform: translateX(-100%);
   }
 
-  65% {
+  70% {
     transform: translateX(4%);
   }
 
   100% {
+    opacity: 1;
     transform: translateX(0);
   }
 }
 
 @keyframes open-right-drawer {
   0% {
+    opacity: 0;
     transform: translateX(100%);
   }
 
-  65% {
+  70% {
     transform: translateX(-4%);
   }
 
   100% {
+    opacity: 1;
     transform: translateX(0);
   }
 }

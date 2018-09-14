@@ -47,7 +47,7 @@ const Sidebar = (props) => (
         <NestedList items={routes} itemRenderer={renderListItem} />
       </nav>
       <div className="Sidebar__footer">
-        <div className={`Sidebar_slide-container--${props.position}`}>
+        <div className={`Sidebar__slide-container--${props.position}`}>
           <Button className="Sidebar__button" color="secondary" block>
             Sign out
           </Button>
